@@ -102,3 +102,8 @@ jobs:
       with:
         name: OpenWrt
         path: openwrt/bin
+    - name : Upload dl artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: dl
+        path: openwrt/dl
